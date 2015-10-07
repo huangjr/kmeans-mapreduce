@@ -72,7 +72,7 @@ if __name__ == '__main__':
     args = argparser()
     if args.mapper:
         mapper_out = do_mapper(args.files)
-        # mapper_out = do_combiner(mapper_out)
+        mapper_out = do_combiner(mapper_out)
         for key, value in mapper_out:
             print('{}\t{}'.format(key, value))
             
